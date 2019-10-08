@@ -6,6 +6,6 @@
     Strict-Transport-Security = "max-age=63072000; includeSubdomains"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; font-src 'self'; img-src 'self'; object-src 'none'; script-src 'strict-dynamic'; style-src 'self'"
+    Content-Security-Policy = "base-uri 'none'; default-src 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'"
     Feature-Policy = "ambient-light-sensor 'none';autoplay 'none';accelerometer 'none';camera 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'none';sync-xhr 'none';usb 'none';vr 'none'"
 
