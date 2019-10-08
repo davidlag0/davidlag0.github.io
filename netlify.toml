@@ -7,4 +7,5 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Content-Security-Policy = "default-src https://eager-curie-7415a7.netlify.com:443"
-    Feature-Policy = "ambient-light-sensor 'none';autoplay 'none';accelerometer 'none';camera 'none';display-capture 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'none';sync-xhr 'none';usb 'none';wake-lock 'none';webauthn 'none';vr 'none'"
+    Feature-Policy = "ambient-light-sensor 'none';autoplay 'none';accelerometer 'none';camera 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'none';sync-xhr 'none';usb 'none';vr 'none'"
+
