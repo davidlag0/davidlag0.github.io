@@ -9,3 +9,8 @@
     Content-Security-Policy = "base-uri 'none'; default-src 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; object-src 'none'; script-src 'self'; style-src 'self'"
     Feature-Policy = "ambient-light-sensor 'none';autoplay 'none';accelerometer 'none';camera 'none';document-domain 'none';encrypted-media 'none';fullscreen 'none';geolocation 'none';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'none';sync-xhr 'none';usb 'none';vr 'none'"
 
+[[redirects]]
+  from = "/*"
+  to = "https://davidlaganiere.com"
+  status = 200
+  force = false
