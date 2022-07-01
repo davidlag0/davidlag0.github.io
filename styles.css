@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans.ttf') format('truetype');
+}
 
 body {
   background: #e3e4e6;
