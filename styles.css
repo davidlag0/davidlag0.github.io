@@ -1,73 +1,118 @@
+/* Reference: https://www.axllent.org/code/google-font-downloader/ */
 @font-face {
-	font-family: 'Open Sans';
-	src: url('OpenSans.ttf') format('truetype');
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300; /* Light */
+  font-display: swap;
+  src: url('Open-Sans-300.woff2') format('woff2'); /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  font-display: swap;
+  src: url('Open-Sans-Regular.woff2') format('woff2'); /* Modern Browsers */
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  font-display: swap;
+  src: url('Open-Sans-700.woff2') format('woff2'); /* Modern Browsers */
 }
 
 body {
-  background: #e3e4e6;
+  background-image: repeating-linear-gradient(45deg, #e3e3e3 0, #e3e3e3 1px, white 0, white 50%);
+  background-size: 10px 10px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-  margin: 10px auto;
-  background: #031b5e;
-  color: #cddcf3;
+  margin: 70px auto;
+  background: #dde7f9;
+  /*background: #e3e3e3;*/
+  /*background: #ffffff;*/
+  color: #323335;
   border-radius: 5px;
   width: 400px;
   text-align: center;
-  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
-}
-
-.cover-photo {
-  background: url(cover-photo.jpg);
-  height: 160px;
-  width: 100%;
-  border-radius: 5px 5px 0 0;
+  /*box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);*/
 }
 
 .photo {
-  height: 125px;
+  height: 120px;
   border-radius: 50%;
-  margin: 93px 0 0 -225px;
-  border: 1px solid #031b5e;
+  margin: -20px 0 0 -225px;
+  border: 1px solid #155b94;
   padding: 2px;
-  background: #031b5e;
+  background: #155b94;
 }
 
 .name-container {
-  margin: 15px 0 0 160px;
+  margin: -90px 0 0 160px;
   display: flex;
   flex-flow: column wrap;
   text-align: left;
 }
 
 .name {
+  background-color: #155b94;
+  color: #ffffff;
   font-size: 25px;
   font-weight: bold;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 5px;
 }
 
 .title {
+  background-color: #155b94;
+  color: #ffffff;
   font-size: 15px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .about {
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   padding: 25px;
   font-weight: 300;
 }
 
 .social-container {
   padding: 0 0 25px 0;
+  display: flex;
+  justify-content: center;
 }
 
-.linkedin {
-  height: 35px;
+.linkedin-container {
   padding-right: 5px;
 }
 
-.github {
-  height: 35px;
+.linkedin-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.linkedin-icon rect {
+  color: #ffffff;
+}
+
+.linkedin-icon path {
+  color: #333;
+}
+
+.github-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.github-icon path {
+  color: #333;
+}
+
+.github-icon circle {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 420px) {
@@ -75,17 +120,13 @@ body {
     width: 320px;
   }
 
-  .cover-photo {
-    height: 128px;
-  }
-
   .photo {
     height: 100px;
-    margin: 75px 0 0 -200px;
+    margin: -20px 0 0 -200px;
   }
 
   .name-container {
-    margin: 10px 0 0 120px;
+    margin: -70px 0 0 120px;
   }
 
   .name {
@@ -96,12 +137,14 @@ body {
     font-size: 12px;
   }
 
-  .linkedin {
+  .linkedin-icon {
     height: 48px;
+    width: 48px;
     padding-right: 15px;
   }
 
-  .github {
+  .github-icon {
     height: 48px;
+    width: 48px;
   }
 }
