@@ -40,9 +40,9 @@ body {
 }
 
 .photo {
-  height: 120px;
+  /*height: 120px;*/
   border-radius: 50%;
-  margin: -20px 0 0 -225px;
+  /*margin: -20px 0 0 -225px;*/
   border: 1px solid #155b94;
   padding: 2px;
   background: #155b94;
@@ -131,12 +131,12 @@ body {
   .container {
     width: 320px;
   }
-
+/*
   .photo {
     height: 100px;
     margin: -20px 0 0 -200px;
   }
-
+*/
   .name-container {
     margin: -70px 0 0 120px;
   }
