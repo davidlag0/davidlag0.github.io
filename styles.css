@@ -34,7 +34,7 @@ body {
   /*background: #ffffff;*/
   color: #323335;
   border-radius: 5px;
-  width: 400px;
+  width: 440px;
   text-align: center;
   /*box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);*/
 }
@@ -42,7 +42,7 @@ body {
 .photo {
   height: 120px;
   border-radius: 50%;
-  margin: -20px 0 0 -225px;
+  margin: -20px 0 0 -275px;
   border: 1px solid #155b94;
   padding: 2px;
   background: #155b94;
