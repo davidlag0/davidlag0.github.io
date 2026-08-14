@@ -1,0 +1,25 @@
+{
+  "name": "davidlag0.github.io",
+  "version": "1.0.0",
+  "description": "David Laganière's personal website",
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlag0/davidlag0.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidlag0/davidlag0.github.io/issues"
+  },
+  "homepage": "https://github.com/davidlag0/davidlag0.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}
