@@ -1,4 +1,5 @@
 export default function(eleventyConfig) {
+  eleventyConfig.addBundle("css");
   eleventyConfig.addPassthroughCopy({ "public": "/" });
 
   return {
@@ -7,7 +8,7 @@ export default function(eleventyConfig) {
       output: "_site",
       includes: "_includes"
     },
-    templateFormats: ["njk", "html"],
+    templateFormats: ["liquid", "html"],
     htmlTemplateEngine: "njk",
     passthroughFileCopy: true
   };
