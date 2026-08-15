@@ -31,7 +31,7 @@
         },
         {
           "key": "Permissions-Policy",
-          "value": "ambient-light-sensor=(), autoplay=(), accelerometer=(), camera=(), document-domain=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), speaker=(), sync-xhr=(), usb=(), vr=()"
+          "value": "accelerometer=(), autoplay=(), camera=(), encrypted-media=(), fullscreen=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), sync-xhr=(), usb=()"
         }
       ]
     }
