@@ -1,6 +1,22 @@
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+
 export default function(eleventyConfig) {
   eleventyConfig.addBundle("css");
   eleventyConfig.addPassthroughCopy({ "public": "/" });
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp"],
+    widths: [224, 448],
+    sharpWebpOptions: {
+      quality: 60,
+      effort: 6,
+    },
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+    },
+  });
 
   return {
     dir: {
