@@ -30,14 +30,11 @@ const vercel = JSON.parse(readFileSync(vercelPath, 'utf8'));
 for (const headerGroup of vercel.headers) {
   for (const header of headerGroup.headers) {
     if (header.key === 'Content-Security-Policy') {
-      // Only add hash if not already present
-      if (!header.value.includes('sha256-')) {
-        // Replace style-src 'self' or style-src-elem 'self' with style-src-elem 'self' <hash>
-        header.value = header.value.replace(
-          /style-src(-elem)? 'self'/,
-          `style-src-elem 'self' ${cspHash}`
-        );
-      }
+      // Remove any existing sha256 hash for style-src-elem
+      header.value = header.value.replace(
+        /style-src-elem 'self'( 'sha256-[^']+')?/,
+        `style-src-elem 'self' ${cspHash}`
+      );
     }
   }
 }
