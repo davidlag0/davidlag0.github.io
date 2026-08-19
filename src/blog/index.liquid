@@ -11,20 +11,22 @@
 <body>
   <div class="page">
     {% include "nav.liquid" %}
-    <div class="blog-header">
-      <h1>Blog</h1>
-    </div>
-    <ul class="post-list">
-      {%- for post in collections.posts -%}
-        <li class="post-item">
-          <a href="{{ post.url }}">
-            <h2>{{ post.data.title }}</h2>
-            <p class="post-date">{{ post.date | dateFormat }}</p>
-            <p class="post-excerpt">{{ post.data.excerpt }}</p>
-          </a>
-        </li>
-      {%- endfor -%}
-    </ul>
+    <main>
+      <div class="blog-header">
+        <h1>Blog</h1>
+      </div>
+      <ul class="post-list">
+        {%- for post in collections.posts -%}
+          <li class="post-item">
+            <a href="{{ post.url }}">
+              <h2>{{ post.data.title }}</h2>
+              <p class="post-date">{{ post.date | dateFormat }}</p>
+              <p class="post-excerpt">{{ post.data.excerpt }}</p>
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </main>
   </div>
 </body>
 </html>
