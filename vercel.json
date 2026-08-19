@@ -27,7 +27,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "base-uri 'none'; default-src 'self' https://umami.davidlaganiere.com; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; object-src 'none'; script-src 'self' https://umami.davidlaganiere.com; style-src-elem 'self' 'sha256-e1m+yRVqm2De2oLPCGbft/2OS28WcFVfCPz+/25i41c='; connect-src 'self' https://umami.davidlaganiere.com"
+          "value": "base-uri 'none'; default-src 'self' https://umami.davidlaganiere.com; font-src 'self'; form-action 'none'; frame-ancestors 'none'; img-src 'self'; object-src 'none'; script-src 'self' https://umami.davidlaganiere.com; style-src-elem 'self' 'sha256-/1ljyor+1UHB53a2y4yhntaOPL+RVdw3PiQRVaCu2NE='; connect-src 'self' https://umami.davidlaganiere.com"
         },
         {
           "key": "Permissions-Policy",

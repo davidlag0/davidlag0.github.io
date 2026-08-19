@@ -6,7 +6,7 @@ const cssPath = join(process.cwd(), 'src/css/style.css');
 const vercelPath = join(process.cwd(), 'vercel.json');
 
 // Read source CSS
-const css = readFileSync(cssPath, 'utf-8').trim();
+const css = readFileSync(cssPath, 'utf-8');
 
 // Compute sha256 hash
 const hash = createHash('sha256').update(css).digest('base64');
