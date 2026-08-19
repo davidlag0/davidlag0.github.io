@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }} - David Laganière</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0059b3">
+  <meta name="Description" content="{{ excerpt }}">
+  <meta charset="UTF-8">
+  {% include "head.liquid" %}
+</head>
+<body>
+  <div class="page">
+    {% include "nav.liquid" %}
+    <main>
+      <header class="post-header">
+        <h1>{{ title }}</h1>
+        <p class="post-date">{{ date | dateFormat }}</p>
+      </header>
+      <article>
+        {{ content }}
+      </article>
+      <a href="/blog" class="back-link">&larr; Back to blog</a>
+    </main>
+  </div>
+</body>
+</html>

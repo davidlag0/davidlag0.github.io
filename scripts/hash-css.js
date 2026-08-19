@@ -2,20 +2,11 @@ import { readFileSync, writeFileSync } from 'fs';
 import { createHash } from 'crypto';
 import { join } from 'path';
 
-const siteDir = join(process.cwd(), '_site');
+const cssPath = join(process.cwd(), 'src/css/style.css');
 const vercelPath = join(process.cwd(), 'vercel.json');
 
-// Read the generated HTML
-const html = readFileSync(join(siteDir, 'index.html'), 'utf8');
-
-// Extract CSS from <style> tag
-const styleMatch = html.match(/<style>([\s\S]*?)<\/style>/);
-if (!styleMatch) {
-  console.error('No <style> tag found in HTML');
-  process.exit(1);
-}
-
-const css = styleMatch[1].trim();
+// Read source CSS
+const css = readFileSync(cssPath, 'utf-8');
 
 // Compute sha256 hash
 const hash = createHash('sha256').update(css).digest('base64');

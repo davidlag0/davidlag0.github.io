@@ -1,0 +1,4 @@
+{
+  "layout": "post.liquid",
+  "permalink": "/blog/{{ page.fileSlug }}/"
+}
