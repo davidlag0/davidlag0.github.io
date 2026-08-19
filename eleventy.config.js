@@ -5,7 +5,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/css": "/css" });
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp"],
-    widths: [224, 448],
+    widths: [150, 300, 450],
     sharpWebpOptions: {
       quality: 60,
       effort: 6,
