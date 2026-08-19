@@ -1,8 +1,21 @@
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { readFileSync } from "fs";
+import { resolve } from "path";
 
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public": "/" });
-  eleventyConfig.addPassthroughCopy({ "src/css": "/css" });
+
+  eleventyConfig.addTransform("inlineCss", function(content, outputPath) {
+    if (outputPath && outputPath.endsWith(".html")) {
+      const cssPath = resolve("src/css/style.css");
+      const css = readFileSync(cssPath, "utf-8");
+      const tag = `<link rel="stylesheet" href="/css/style.css">`;
+      const inline = `<style>${css}</style>`;
+      return content.replace(tag, inline);
+    }
+    return content;
+  });
+
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp"],
     widths: [150, 300, 450],
