@@ -23,10 +23,18 @@
     src: url('/fonts/MonaSansMonoVF[wdth,wght].woff2') format('woff2');
   }
 
+  @font-face {
+    font-family: 'Mona Sans fallback';
+    src: local('Arial'), local('Helvetica Neue'), local('Helvetica'), local('sans-serif');
+    ascent-override: 109%;
+    descent-override: 32%;
+    line-gap-override: 0%;
+  }
+
   body {
     background-image: repeating-linear-gradient(45deg, #e3e3e3 0, #e3e3e3 1px, white 0, white 50%);
     background-size: 10px 10px;
-    font-family: 'Mona Sans', sans-serif;
+    font-family: 'Mona Sans', 'Mona Sans fallback', sans-serif;
   }
 
   .container {
