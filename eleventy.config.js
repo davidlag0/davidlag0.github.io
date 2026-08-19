@@ -7,7 +7,7 @@ export default function(eleventyConfig) {
     formats: ["webp"],
     widths: [150, 300, 450],
     sharpWebpOptions: {
-      quality: 60,
+      quality: 50,
       effort: 6,
     },
     htmlOptions: {
