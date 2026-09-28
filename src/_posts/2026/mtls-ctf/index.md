@@ -9,7 +9,7 @@ draft: true
 
 ## The Challenge
 
-A customer needs an urgent fix on a server but somehow that server's block is stuck at Y2K. The customer gave you the intermediate CA and key to generate the client certificate you need to connect. The customer also provided you with the fields the certificate needs to have.
+A customer needs an urgent fix on a server but somehow that server's clock is stuck at Y2K. The customer gave you the intermediate CA and key to generate the client certificate you need to connect. The customer also provided you with the fields the certificate needs to have.
 
 **Server address:** <code id="tunnel-address">Loading...</code>
 
