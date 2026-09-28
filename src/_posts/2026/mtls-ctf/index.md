@@ -30,22 +30,17 @@ The PKI materials are available directly from the server:
 - `intermediate.key` — Intermediate CA private key
 
 <script>
-  // TODO: replace with real Worker URL
-  // const WORKER_URL = "https://<YOUR_WORKER_URL>";
+  const WORKER_URL = "https://ctf-tunnel-webhook.davidlag.workers.dev";
 
   async function fetchTunnelAddress() {
-    // TODO: uncomment when Worker is deployed
-    // try {
-    //   const res = await fetch(WORKER_URL);
-    //   if (!res.ok) return null;
-    //   const data = await res.json();
-    //   return data.address || null;
-    // } catch {
-    //   return null;
-    // }
-
-    // Test: simulate a response
-    return "ldn1.e.tunnelthat.xyz:12345";
+    try {
+      const res = await fetch(WORKER_URL);
+      if (!res.ok) return null;
+      const data = await res.json();
+      return data.address || null;
+    } catch {
+      return null;
+    }
   }
 
   async function updateTunnelDisplay() {
